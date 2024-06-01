@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="./STYLE.CSS">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Digital Marketing Agency</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Boost Your Business with Our Marketing Solutions</h2>
+            <p>We provide top-notch digital marketing services to help your business grow.</p>
+            <button id="learn-more">Learn More</button>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>SEO</h3>
+                    <p>Optimize your website for search engines and improve your rankings.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Social Media Marketing</h3>
+                    <p>Engage with your audience on social media platforms.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Content Marketing</h3>
+                    <p>Create compelling content to attract and retain customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of experienced digital marketers dedicated to helping businesses succeed online.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Digital Marketing Agency. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js">
+        document.addEventListener("DOMContentLoaded", function() {
+            // Anime.js animation
+            anime({
+                targets: '.hero h2',
+                translateY: [-50, 0],
+                opacity: [0, 1],
+                duration: 1000,
+                easing: 'easeOutExpo'
+            });
+        
+            anime({
+                targets: '.hero p',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                duration: 1000,
+                easing: 'easeOutExpo',
+                delay: 500
+            });
+        
+            anime({
+                targets: '.hero button',
+                scale: [0.8, 1],
+                opacity: [0, 1],
+                duration: 1000,
+                easing: 'easeOutExpo',
+                delay: 1000
+            });
+        });
+        
+    </script>
+</body>
+</html>
